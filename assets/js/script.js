@@ -99,8 +99,9 @@ function startQuiz() {
 }
     
 function loadQuestion() {
-    let currentQuestions  = questions[questionNumber];
-    questionElement.innerHTML = currentQuestions.questions;
+let currentQuestion = questions[questionNumber];
+let questionNo = questionNumber + 1;
+questionElement.innerHTML = questionNo + currentQuestion.question;
 }
 
 startQuiz()
