@@ -1,15 +1,15 @@
-const question = document.getElementsByClassName(questiontext);
-const answer = document.getElementsByClassName(answerbuttons);
-const nextquestion = document.getElementsByClassName(nextquestion);
+const question = document.getElementsByClassName("question-text");
+const answer = document.getElementsByClassName("answer-buttons");
+const nextquestion = document.getElementsByClassName("next-question");
 
-let questions = [
+const questions = [
     {
         question: "What is the capital of France?",
         choice1: Paris,
         choice2: London,
         choice3: Tokyo,
         choice4: Amsterdam,
-        answer: 1
+        answer: choice1
     },
     {
         question: "What is the capital of France?",
@@ -88,16 +88,21 @@ let questions = [
 let questionNumber = 0;
 let score = 0;
 
-function startQuiz () {
-questionNumber = 0;
-score = 0;
-loadQuestion;
+function startQuiz() {
+    questionNumber = 0;
+    score = 0;
+    loadQuestion;
 }
 
-function loadQuestion () {
+function loadQuestion() {
+    questionNumber++;
+    question.innerText = questions;
+    console.log(loadQuestion);
+    
+
 
 }
 
-function getnextQuestion () {
+function getnextQuestion() {
 
 }

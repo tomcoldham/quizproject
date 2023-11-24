@@ -44,7 +44,7 @@ flex-direction: column;
 margin: 40px;
 }
 
-.answerbuttons {
+.answer-buttons {
 margin: 10px;
 border-radius: 5px;
 text-align: left;
@@ -54,7 +54,7 @@ width: 700px;
 font-size: 20px;
 }
 
-.nextquestion {
+.next-question {
 height: 60px;
 width: 200px;
 border-radius: 7px;
