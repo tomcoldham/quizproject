@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function(){
-const question = document.getElementsByClassName("question-text");
-const answer = document.getElementsByClassName("answer-buttons");
-const nextquestion = document.getElementsByClassName("next-question");
-})
+document.addEventListener("DOMContentLoaded", function () {
+    const questionElement = document.getElementById('questiondisplay');
+    const answerButton = document.getElementsByClassName("answer-buttons");
+    const nextQuestion = document.getElementsByClassName("next-question");
+});
 const questions = [
     {
         question1: "What is the capital of France?",
@@ -92,17 +92,15 @@ let score = 0;
 function startQuiz() {
     questionNumber = 0;
     score = 0;
-    nextquestion.innerHTML = "change";
     loadQuestion();
 }
 
-function loadQuestion() {
-    questionNumber++;
-    question.innerHTML = questions.question1;
+function loadQuestion(question) {
+
 }
 
 function getnextQuestion() {
 
 }
 
-startQuiz() ;
+startQuiz();
