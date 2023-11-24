@@ -5,82 +5,82 @@ const nextquestion = document.getElementsByClassName("next-question");
 const questions = [
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
-        answer: choice1
-    },
-    {
-        question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
     {
         question: "What is the capital of France?",
-        choice1: Paris,
-        choice2: London,
-        choice3: Tokyo,
-        choice4: Amsterdam,
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
+        answer: 1
+    },
+    {
+        question: "What is the capital of France?",
+        choice1: "Paris",
+        choice2: "London",
+        choice3: "Tokyo",
+        choice4: "Amsterdam",
         answer: 1
     },
 ];
@@ -96,8 +96,9 @@ function startQuiz() {
 
 function loadQuestion() {
     questionNumber++;
-    question.innerText = questions;
-    console.log(loadQuestion);
+    question.innerText = questions.question;
+    
+    
     
 
 
