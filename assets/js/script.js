@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const questionElement = document.getElementById('questiondisplay');
+    let button = document.getElementById('switch');
+    const questiondisplay = document.getElementById("questiondisplay");
     const answerButton = document.getElementsByClassName("answer-buttons");
     const nextQuestion = document.getElementsByClassName("next-question");
 });
@@ -13,7 +14,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question2: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -21,7 +22,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question3: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -29,7 +30,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question4: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -37,7 +38,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question5: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -45,7 +46,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question6: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -53,7 +54,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question7: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -61,7 +62,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question8: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -69,7 +70,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question9: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -77,7 +78,7 @@ const questions = [
         answer: 1
     },
     {
-        question: "What is the capital of France?",
+        question10: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -92,15 +93,11 @@ let score = 0;
 function startQuiz() {
     questionNumber = 0;
     score = 0;
-    loadQuestion();
+    loadQuestion;
+}
+    
+function loadQuestion() {
+questiondisplay.innerHTML = questions[0]
 }
 
-function loadQuestion(question) {
-
-}
-
-function getnextQuestion() {
-
-}
-
-startQuiz();
+startQuiz()
