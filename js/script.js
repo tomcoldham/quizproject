@@ -88,3 +88,8 @@ let questions = [
 let questionNumber = 0;
 let score = 0;
 
+function startQuiz () {
+questionNumber = 0;
+score = 0;
+loadQuestion;
+}
