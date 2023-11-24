@@ -1,6 +1,6 @@
 const question = document.getElementsByClassName(questiontext);
 const answer = document.getElementsByClassName(answerbuttons);
-const nextnextquestion = document.getElementsByClassName(nextquestion);
+const nextquestion = document.getElementsByClassName(nextquestion);
 
 let questions = [
     {
@@ -92,4 +92,12 @@ function startQuiz () {
 questionNumber = 0;
 score = 0;
 loadQuestion;
+}
+
+function loadQuestion () {
+
+}
+
+function getnextQuestion () {
+
 }
