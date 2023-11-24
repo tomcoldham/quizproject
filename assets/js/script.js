@@ -4,7 +4,7 @@ const nextquestion = document.getElementsByClassName("next-question");
 
 const questions = [
     {
-        question: "What is the capital of France?",
+        question1: "What is the capital of France?",
         choice1: "Paris",
         choice2: "London",
         choice3: "Tokyo",
@@ -91,21 +91,16 @@ let score = 0;
 function startQuiz() {
     questionNumber = 0;
     score = 0;
-    loadQuestion(questions[questionNumber])
+    loadQuestion();
 }
 
 function loadQuestion() {
     questionNumber++;
-    question.innerText = questions.question;
-
-    
-    
-
-
+    questionElement.innerHTML = questions.question1;
 }
 
 function getnextQuestion() {
 
 }
 
-startQuiz ()
+startQuiz() ;
